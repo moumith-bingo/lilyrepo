@@ -41,3 +41,20 @@ console.log(checkletter(letter))
 
 //check the average and print pass and fail
 
+let marks1 = 40
+let marks2 = 50
+let marks3 = 20
+
+let average = (marks1+marks2+marks3)/3
+
+function result(average) {
+    
+    if (average>=40)
+        return "pass"
+    else
+        return "fail"
+    
+}
+console.log (result(average))
+
+
