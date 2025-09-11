@@ -25,5 +25,18 @@ function SumofMatrix(mat1,mat2) {
     }
     return sumMatrix;
 }
+let row=3;
+let col=4;
+let mat1=generateMatrix(row,col);
+let mat2=generateMatrix(row,col);
+let sumMat=SumofMatrix(mat1,mat2);
+
+console.log("Matrix 1 is ");
+printMatrix(mat1);
+console.log("Matrix 2 is ");
+printMatrix(mat2);
+
+console.log("Sumation of both Matrix is ");
+printMatrix(sumMat);
 
 console.log(SumofMatrix())

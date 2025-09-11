@@ -1,6 +1,6 @@
 let numbers = []
 console.log(numbers)
-numbers.push (154,14,58,47)
+numbers.push (9,54,14,58,47)
 
 
 function addAnElement(numbers,index,value) {
@@ -30,10 +30,14 @@ addAnElement(numbers,4,16)
 //finding the largest in array.
 
 function findingMaximum(numbers){
-    let  max=numbers[0];
+    var  max=numbers [0];
     for(let i=1; i<numbers.lengh;i++){
+        
         if(max<numbers[i]){
-            max=numbers[i];
+           return max=numbers[i];
+        }
+        else {
+            return max =max
         }
     }
     console.log ("the maximum is "+max)
@@ -42,7 +46,7 @@ findingMaximum(numbers);
 
 function addNumber(numbers) {
     let sum=0
-    for(let i=0;i<numbers.lengh;i++){
+    for(let i=0;i<numbers.length;i++){
         if(sum<numbers[i]){
             sum=numbers[i];
         }
