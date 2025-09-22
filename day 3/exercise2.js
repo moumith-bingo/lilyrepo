@@ -17,7 +17,7 @@ console.log (largestNumber(num1,num2,num3))
 
 //check the year whether is leap year or not
 
-let year = 2010
+let year = ""
 
 function leapyear(year){
     if (year%4==0)
@@ -25,7 +25,7 @@ function leapyear(year){
     else 
         return "this is not a leap year"
 }
-console.log (leapyear(year))
+console.log (leapyear(2003))
 
 //Write a program to check if a character is vowel or consonant.
 let letter = "b"
