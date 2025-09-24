@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            padding: 20px;
+        }
+        p{
+            font-size:xx-large
+        
+        }
+    </style>
+    <script>
+        function changePara() {
+            document.getElementById("mahaan").innerHTML=Date();
+            
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <p id="mahaan">What's the time</p>
+    <button id="click" onclick='changePara()'>click here</button>
+
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML = names();
+        function names() {
+            return "nina"
+        }
+    </script>
+</body>
+</html>
