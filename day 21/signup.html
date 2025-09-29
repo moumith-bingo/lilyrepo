@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        body{
+            background-image: url(/day37/hand-drawn-pink-bubble-gum-600nw-400318240.webp);
+        }
+    
+        .log{
+            color: #874BA1;
+            padding-top: 20px;
+        }
+        .user{
+            background-color: rgba(225, 23, 80, 0.5);
+            border:rgba(147, 165, 75, 0.5) ;
+            padding: 12px;
+               border-radius: 10px;
+            -webkit-text-fill-color:rgba(0, 0, 0, 0.3) ;
+        }
+        .userx{
+               background-color: rgba(220, 14, 55, 0.5);
+            border:rgba(177, 69, 179, 0.5)  ;
+            width: 140px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .userx:hover{
+            background-color: red;
+            transition: ease 1s;
+         
+        }
+     
+     
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="display-6 fw-bold log">Sign Up</div>
+        <div class="p-5">
+            <form class="forms" id="signupform" novalidate>
+                <label for="username">Firstname:</label>
+                <input type="text" class="user m-3" id="username" required>
+                <span class="error" id="usernameError"></span>
+                <br>
+                <label for="username">Lastname:</label>
+                <input type="text" class="user m-3" id="username" required>
+                <span class="error" id="usernameError"></span>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" class="user m-3" id="Email" required>
+                <span class="error" id="EmailError"></span>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" class="user m-3" id="password" required>
+                <span class="error" id="PasswordError"></span><br>
+
+                <label for="Confirm password" id="Confirmpassword">Confirm password:</label>
+                <input type="password" class="user m-3" id="confirmpassword" required>
+                <span class="error" id="ConfirmpasswordError"></span><br>
+
+                <input type="checkbox" class="icon" id="checked" required>
+                <label for="icon">remember me</label>  <a href="#" class="text-dark">forgot password?</a><br>
+                <button class="userx mt-4" type="submit">Register</button>
+                <p class="p-3 fw-bold">You Don't have an Account? <a href="/day37/figmalog.html" class="text-dark">Login</a></p>
+            </form>
+            
+        </div>
+
+      
+    </div>
+    <script src="validate.js"></script>
+</body>
+</html>
